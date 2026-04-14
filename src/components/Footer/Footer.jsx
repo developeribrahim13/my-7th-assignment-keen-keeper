@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='max-w-[80%] mx-auto'>
             <div className='flex flex-col items-center justify-center gap-4 pb-5'>
                 <img src={ftrlogo} alt='footer-logo'></img>
-                <p className='text-gray-200 max-[988px]:text-center'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+                <p className='text-gray-200 max-[988px]:text-center text-sm sm:text-base'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 <h3 className='text-gray-50 text-xl font-medium mt-2'>Social Links</h3>
                 <div className='flex item-center gap-2.5'>
                     <img src={insta} alt='instagram-logo'></img>

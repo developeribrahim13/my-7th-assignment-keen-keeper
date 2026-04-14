@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Chen",
+    "picture": "https://i.pravatar.cc/150?u=1",
+    "email": "sarah.chen@email.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["high school", "close friend"],
+    "bio": "Childhood best friend. Always shares the best book recommendations.",
+    "goal": 14,
+    "next_due_date": "2026-03-31"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Rodriguez",
+    "picture": "https://i.pravatar.cc/150?u=2",
+    "email": "m.rodriguez@techmail.org",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["work", "tech-industry"],
+    "bio": "Former mentor at my first job. We talk about career growth.",
+    "goal": 30,
+    "next_due_date": "2026-05-11"
+  },
+  {
+    "id": 3,
+    "name": "Priya Sharma",
+    "picture": "https://i.pravatar.cc/150?u=3",
+    "email": "priya.sharma@webmail.com",
+    "days_since_contact": 6,
+    "status": "almost due",
+    "tags": ["college", "dance-class"],
+    "bio": "My partner-in-crime during university engineering labs.",
+    "goal": 7,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 4,
+    "name": "David Miller",
+    "picture": "https://i.pravatar.cc/150?u=4",
+    "email": "dave.miller88@gmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["neighbor", "gaming"],
+    "bio": "Lived next door for three years. We used to play online matches.",
+    "goal": 21,
+    "next_due_date": "2026-03-10"
+  },
+  {
+    "id": 5,
+    "name": "Aisha Khan",
+    "picture": "https://i.pravatar.cc/150?u=5",
+    "email": "aisha.k@artstudio.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["art", "close friend"],
+    "bio": "Incredible digital illustrator. Bonded over minimalist design.",
+    "goal": 14,
+    "next_due_date": "2026-04-26"
+  },
+  {
+    "id": 6,
+    "name": "Julian Vance",
+    "picture": "https://i.pravatar.cc/150?u=6",
+    "email": "vance.julian@outlook.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["gym", "fitness"],
+    "bio": "My morning gym buddy. Keeps me accountable on leg days.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 7,
+    "name": "Elena Rossi",
+    "picture": "https://i.pravatar.cc/150?u=7",
+    "email": "elena.rossi@traveler.it",
+    "days_since_contact": 90,
+    "status": "overdue",
+    "tags": ["travel", "study abroad"],
+    "bio": "Met her while backpacking through Italy in 2022.",
+    "goal": 60,
+    "next_due_date": "2026-02-15"
+  },
+  {
+    "id": 8,
+    "name": "James O'Connor",
+    "picture": "https://i.pravatar.cc/150?u=8",
+    "email": "james.oc@medmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["family", "cousin"],
+    "bio": "Technically a cousin, but feels like a brother.",
+    "goal": 30,
+    "next_due_date": "2026-05-09"
+  },
+  {
+    "id": 9,
+    "name": "Liam Nguyen",
+    "picture": "https://i.pravatar.cc/150?u=9",
+    "email": "liam.n@photography.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["photography", "hobby"],
+    "bio": "Met during a photography workshop. We exchange feedback.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 10,
+    "name": "Sophie Dubois",
+    "picture": "https://i.pravatar.cc/150?u=10",
+    "email": "sophie.dubois@language.fr",
+    "days_since_contact": 28,
+    "status": "overdue",
+    "tags": ["language", "online"],
+    "bio": "My French language partner. We had weekly Zoom calls.",
+    "goal": 14,
+    "next_due_date": "2026-03-30"
+  }
+]
