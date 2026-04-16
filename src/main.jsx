@@ -8,6 +8,7 @@ import Timeline from './components/pages/timelines/Timeline.jsx';
 import Stats from './components/pages/stats/Stats.jsx';
 import Homepage from './components/pages/homepage/Homepage.jsx';
 import Details from './components/pages/homepage/Cards/details/Details.jsx';
+import Error from './components/pages/Error/Error.jsx';
 
 const router = createBrowserRouter([
   {
@@ -31,8 +32,10 @@ const router = createBrowserRouter([
         Component: Details,
         loader: () => fetch('/friends.json')
       }
-    ]
+    ],
+    errorElement: <Error/>
   },
+    
 ]);
 
 
