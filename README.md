@@ -1,16 +1,29 @@
-# React + Vite
+# 🤝 Keen Keeper - Meaningful Friendship Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Keen Keeper** is a specialized web application designed to help users nurture and maintain their most important relationships. In a busy world, this tool tracks your interactions and provides visual insights to ensure no friendship is neglected.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[Explore Keen Keeper Live](https://my-7th-assignment.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+1.  **📊 Friendship Analytics (Stats):** An interactive dashboard featuring a **Pie Chart** (powered by Recharts) that visualizes your interaction patterns across Calls, Texts, and Video chats.
+    
+2.  **⏳ Dynamic Timeline with Filtering:** A chronological log of all your friendship activities. Users can filter the timeline by interaction type (Call, Text, Video) to quickly review their history.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3.  **⚡ Modern Data Fetching & Loading UI:** Built with React 19's latest `use()` hook and `Suspense` for seamless data fetching. It features a polished **CircleLoader** to enhance user experience during data transitions.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Core Framework:** React.js (v19), React Router v7
+- **Styling:** Tailwind CSS, DaisyUI
+- **Data Visualization:** Recharts
+- **State Management:** React Context API
+- **Utilities:** React Spinners, React Toastify, Lucide Icons (or React Icons)
+- **Deployment:** Netlify
+
+## 📸 Project Structure Highlights
+
+- **Context API:** Used `TimelineProvider` to manage and share interaction logs globally across the app.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop views using Tailwind's responsive utilities.
+- **Custom Error Handling:** Includes a dedicated 404/Error page to guide users back to safety.
