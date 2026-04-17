@@ -19,6 +19,7 @@ const Stats = () => {
             <h1 className='text-4xl font-bold'>FriendShip Analytics</h1>
         <div className='border border-slate-300 rounded-lg bg-white mt-3 flex flex-col justify-center items-center py-6'>
             <h3 className=' w-full pl-3 pt-1'>By Interection Type</h3>
+            {textCount==0&&callCount==0&&videoCount==0?(<div className=' text-4xl font-bold text-gray-600 text-center px-2.5'>No Interaction History Found!</div>):""}
            <PieChart style={{ width: '100%', maxWidth: '500px', maxHeight: '80vh', aspectRatio: 1 }} responsive>
       <Pie
         data={data}

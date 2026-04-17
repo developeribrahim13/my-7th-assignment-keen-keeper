@@ -9,7 +9,6 @@ const dataPaichi = fetchData();
 
 const Homepage = () => {
 const friends = use(dataPaichi);
-console.log(friends)
     return (
         <div className='bg-gray-50'>
             <div className='max-w-[80%] mx-auto pt-10 pb-13 sm:pt-16'>

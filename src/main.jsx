@@ -1,4 +1,4 @@
-import { Component, StrictMode } from 'react'
+import { Component, StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
@@ -11,6 +11,7 @@ import Details from './components/pages/homepage/Cards/details/Details.jsx';
 import Error from './components/pages/Error/Error.jsx';
 import TimelineProvider from './context/TimelineProvider.jsx';
 import { ToastContainer } from 'react-toastify';
+import { CircleLoader } from 'react-spinners';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,13 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        Component: Homepage,
+        element:(
+          <Suspense fallback={
+            <div className='flex justify-center py-10 items-center'><CircleLoader/></div>
+          }>
+            <Homepage/>
+          </Suspense>
+        )
       },
       {
         path: "/timeline",
