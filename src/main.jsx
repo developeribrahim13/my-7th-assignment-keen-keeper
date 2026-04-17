@@ -9,6 +9,8 @@ import Stats from './components/pages/stats/Stats.jsx';
 import Homepage from './components/pages/homepage/Homepage.jsx';
 import Details from './components/pages/homepage/Cards/details/Details.jsx';
 import Error from './components/pages/Error/Error.jsx';
+import TimelineProvider from './context/TimelineProvider.jsx';
+import { ToastContainer } from 'react-toastify';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <TimelineProvider>
+      <RouterProvider router={router} />
+      <ToastContainer/>
+    </TimelineProvider>
   </StrictMode>,
 )

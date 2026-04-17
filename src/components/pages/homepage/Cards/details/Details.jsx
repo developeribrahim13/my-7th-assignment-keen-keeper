@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { RiNotificationSnoozeLine } from "react-icons/ri";
 import { FiArchive } from "react-icons/fi";
@@ -6,8 +6,12 @@ import { RiDeleteBinLine } from "react-icons/ri";
 import call from "/assets/call.png";
 import text from "/assets/text.png";
 import video from "/assets/video.png";
+import { TimelineContext } from '../../../../../context/TimelineProvider';
+
+
 
 const Details = () => {
+    const {handleTimeline} = useContext(TimelineContext)
     const { id } = useParams()
     const friends = useLoaderData()
     const expectedFriend = friends.find(friend => friend.id == id)
@@ -72,15 +76,15 @@ const Details = () => {
                     <div className='col-span-3 row-span-2  p-5 bg-white shadow'>
                         <h2 className='font-extrabold text-lg text-[#244D3E] mb-4'>Quick Check-In</h2>
                         <div className='grid grid-cols-3 gap-3'>
-                            <div className='bg-gray-100 shadow rounded-lg py-4 flex flex-col items-center justify-center gap-1.5'>
+                            <div onClick={()=>handleTimeline(expectedFriend.id,expectedFriend.name, "call")} className='bg-gray-100 shadow rounded-lg py-4 flex flex-col items-center justify-center gap-1.5'>
                                 <img src={call}></img>
                                 <p>Call</p>
                             </div>
-                            <div className='bg-gray-100 shadow rounded-lg py-4 flex flex-col items-center justify-center gap-1.5'>
+                            <div onClick={()=>handleTimeline(expectedFriend.id,expectedFriend.name, "text")} className='bg-gray-100 shadow rounded-lg py-4 flex flex-col items-center justify-center gap-1.5'>
                                 <img src={text}></img>
                                 <p>Text</p>
                             </div>
-                            <div className='bg-gray-100 shadow rounded-lg py-4 flex flex-col items-center justify-center gap-1.5'>
+                            <div onClick={()=>handleTimeline(expectedFriend.id,expectedFriend.name, "vedio")} className='bg-gray-100 shadow rounded-lg py-4 flex flex-col items-center justify-center gap-1.5'>
                                 <img src={video}></img>
                                 <p>Video</p>
                             </div>
